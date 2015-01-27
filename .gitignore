@@ -1,53 +1,137 @@
-# build products...
-*.py[co]
-build
-AUTHORS.TXT
-# Emacs backup files...
-*~
-.\#*
-# RPM stuff...
-MANIFEST
-dist
-rpm-build
-# Eclipse/PyDev stuff...
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Distribution / packaging
+.Python
+env/
+bin/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# Translations
+*.mo
+
+# Mr Developer
+.mr.developer.cfg
 .project
 .pydevproject
-# PyCharm stuff...
-.idea
-#IntelliJ IDEA stuff..
+
+# Rope
+.ropeproject
+
+# Django stuff:
+*.log
+*.pot
+
+# Sphinx documentation
+docs/_build/
+
+### Vagrant template
+.vagrant/
+
+
+### VirtualEnv template
+# Virtualenv
+# http://iamzed.com/2009/05/07/a-primer-on-virtualenv/
+.Python
+[Bb]in
+[Ii]nclude
+[Ll]ib
+[Ss]cripts
+pyvenv.cfg
+
+
+### JetBrains template
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
+
 *.iml
-# Mac OS X stuff...
-.DS_Store
-# manpage build stuff...
-docs/man/man3/*
-# Sublime stuff
-*.sublime-project
-*.sublime-workspace
-# docsite stuff...
-docsite/rst/modules_by_category.rst
-docsite/rst/list_of_*.rst
-docsite/rst/*_module.rst
-docsite/*.html
-docsite/_static/*.gif
-docsite/_static/*.png
-docsite/_static/websupport.js
-docsite/searchindex.js
-docsite/htmlout
-# deb building stuff...
-debian/
-deb-build
-# Vim swap files
-*.swp
-*.swo
-credentials.yml
-# test output
+
+## Directory-based project format:
+.idea/
+# if you remove the above rule, at least ignore the following:
+
+# User-specific stuff:
+# .idea/workspace.xml
+# .idea/tasks.xml
+# .idea/dictionaries
+
+# Sensitive or high-churn files:
+# .idea/dataSources.ids
+# .idea/dataSources.xml
+# .idea/sqlDataSources.xml
+# .idea/dynamic.xml
+# .idea/uiDesigner.xml
+
+### vim template
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
 .coverage
-results.xml
+.cache
+nosetests.xml
 coverage.xml
-/test/units/cover-html
-# Development
-/test/develop
-venv
-Vagrantfile
-.vagrant
-ansible.egg-info/
+
+# Translations
+*.mo
+*.pot
+
+# PyBuilder
+target/
+
+### Perl template
+/blib/
+/.build/
+_build/
+cover_db/
+inc/
+Build
+!Build/
+Build.bat
+.last_cover_stats
+/Makefile
+/Makefile.old
+/MANIFEST.bak
+/META.yml
+/META.json
+/MYMETA.*
+nytprof.out
+/pm_to_blib
+*.o
+*.bs
